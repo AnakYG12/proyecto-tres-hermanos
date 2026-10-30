@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tienda 3 Hermanos: catálogo, precios, promociones, horarios, ubicación, contacto y formularios.">
+<meta name="author" content="Proyecto académico - Fundamentos de Sistemas Web">
+<title>Realizar pedido | Tienda 3 Hermanos</title>
+</head>
+<body>
+    <!-- SITIO ACADÉMICO: únicamente HTML5, sin CSS ni JavaScript. -->
+    <header>
+        <h1>🏪 Tienda 3 Hermanos</h1>
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a> |
+            <a href="nosotros.html">Nosotros</a> |
+            <a href="catalogo.html">Catálogo</a> |
+            <a href="promociones.html">Promociones</a> |
+            <a href="horarios.html">Horarios</a> |
+            <a href="ubicacion.html">Ubicación</a> |
+            <a href="pedido.html">Realizar pedido</a> |
+            <a href="contacto.html">Contacto</a> |
+            <a href="multimedia.html">Multimedia</a> |
+            <a href="aprendizaje.html">Etiquetas HTML</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="pedido">
+            <h2>Formulario de consulta de pedido</h2>
+            <p><strong>Aviso:</strong> este formulario sirve para practicar HTML. No envía información a la tienda ni registra ventas porque no hay servidor de procesamiento.</p>
+            <form action="#pedido" method="get">
+                <fieldset>
+                    <legend>1. Datos del cliente</legend>
+                    <p><label for="nombre">Nombres y apellidos:</label><br><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="80" required autocomplete="name"></p>
+                    <p><label for="email">Correo electrónico:</label><br><input type="email" id="email" name="email" placeholder="cliente@ejemplo.com" required autocomplete="email"></p>
+                    <p><label for="telefono">Número de teléfono:</label><br><input type="tel" id="telefono" name="telefono" placeholder="09XXXXXXXX" pattern="[0-9]{10}" title="Escribe 10 dígitos numéricos" required autocomplete="tel"></p>
+                    <p><label for="clave">Contraseña de ejemplo (no introduzcas una real):</label><br><input type="password" id="clave" name="clave_demo" minlength="6" maxlength="20" autocomplete="off"></p>
+                    <p><label for="direccion">Dirección de entrega (si aplica):</label><br><input type="text" id="direccion" name="direccion" placeholder="Barrio, calle y referencia" size="45"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Selección de productos</legend>
+                    <p><label for="producto">Producto:</label><br>
+                        <select id="producto" name="producto" required>
+                            <option value="">Selecciona un producto</option>
+                            <optgroup label="Comida"><option value="pan">Pan de agua x6</option><option value="arroz">Arroz 1 kg</option><option value="huevos">Huevos x12</option><option value="atun">Atún</option></optgroup>
+                            <optgroup label="Bebidas"><option value="gaseosa">Gaseosa 1,5 L</option><option value="agua">Agua 600 ml</option><option value="leche">Leche 1 L</option><option value="jugo">Jugo de naranja</option></optgroup>
+                            <optgroup label="Otros"><option value="detergente">Detergente</option><option value="cloro">Cloro</option><option value="papas">Papas fritas</option><option value="galletas">Galletas</option><option value="caramelos">Caramelos</option><option value="jabon">Jabón</option><option value="pasta">Pasta dental</option></optgroup>
+                        </select>
+                    </p>
+                    <p><label for="cantidad">Cantidad:</label><br><input type="number" id="cantidad" name="cantidad" min="1" max="100" value="1" required></p>
+                    <p><label for="fecha">Fecha de compra deseada:</label><br><input type="date" id="fecha" name="fecha"></p>
+                    <p><label for="hora">Hora preferida:</label><br><input type="time" id="hora" name="hora"></p>
+                    <p><label for="presupuesto">Presupuesto aproximado (USD):</label><br><input type="number" id="presupuesto" name="presupuesto" min="0" max="1000" step="0.01" placeholder="10.00"></p>
+                    <p><label for="busqueda">Buscar o indicar otro producto:</label><br><input type="search" id="busqueda" name="busqueda" placeholder="Nombre de otro producto"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Preferencias de compra</legend>
+                    <p>Modalidad de entrega:</p>
+                    <label><input type="radio" name="entrega" value="retiro" checked> Retiro en la tienda</label><br>
+                    <label><input type="radio" name="entrega" value="domicilio"> Domicilio (sujeto a disponibilidad)</label>
+                    <p>Categorías de interés:</p>
+                    <label><input type="checkbox" name="interes" value="comida"> Comida</label><br>
+                    <label><input type="checkbox" name="interes" value="bebidas"> Bebidas</label><br>
+                    <label><input type="checkbox" name="interes" value="limpieza"> Limpieza</label><br>
+                    <label><input type="checkbox" name="interes" value="aseo"> Aseo personal</label>
+                    <p><label for="observaciones">Observaciones adicionales:</label><br><textarea id="observaciones" name="observaciones" rows="5" cols="55" maxlength="500" placeholder="Escribe tus preguntas o indicaciones"></textarea></p>
+                    <p><label><input type="checkbox" name="aceptacion" value="si" required> Entiendo que es un formulario académico de demostración.</label></p>
+                </fieldset>
+                <p><button type="submit">Probar envío GET (solo demostración)</button> <button type="reset">Limpiar formulario</button></p>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p><strong>Tienda 3 Hermanos</strong> | Proyecto académico de Fundamentos de Sistemas Web.</p>
+        <p><a href="index.html">Volver al inicio ↑</a></p>
+    </footer>
+</body>
+</html>

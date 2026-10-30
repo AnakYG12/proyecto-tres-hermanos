@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tienda 3 Hermanos: catálogo, precios, promociones, horarios, ubicación, contacto y formularios.">
+<meta name="author" content="Proyecto académico - Fundamentos de Sistemas Web">
+<title>Catálogo | Tienda 3 Hermanos</title>
+</head>
+<body>
+    <header>
+        <h1>🏪 Tienda 3 Hermanos</h1>
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a> |
+            <a href="nosotros.html">Nosotros</a> |
+            <a href="catalogo.html">Catálogo</a> |
+            <a href="promociones.html">Promociones</a> |
+            <a href="horarios.html">Horarios</a> |
+            <a href="ubicacion.html">Ubicación</a> |
+            <a href="pedido.html">Realizar pedido</a> |
+            <a href="contacto.html">Contacto</a> |
+            <a href="multimedia.html">Multimedia</a> |
+            <a href="aprendizaje.html">Etiquetas HTML</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de productos</h2>
+            <p>Consulta la <strong>tabla de productos</strong> organizada en filas y columnas.</p>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Tabla 1. Catálogo de referencia de Tienda 3 Hermanos (USD)</caption>
+                <thead>
+                    <tr><th scope="col">Código</th><th scope="col">Producto</th><th scope="col">Categoría</th><th scope="col">Precio referencial</th><th scope="col">Stock de ejemplo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>P-001</td><td>Pan de agua x6</td><td>Comida</td><td>$1,20</td><td>25</td></tr>
+                    <tr><td>P-002</td><td>Arroz 1 kg</td><td>Comida</td><td>$1,35</td><td>40</td></tr>
+                    <tr><td>P-003</td><td>Huevos x12</td><td>Comida</td><td>$2,80</td><td>15</td></tr>
+                    <tr><td>P-004</td><td>Atún en lata</td><td>Comida</td><td>$1,60</td><td>3</td></tr>
+                    <tr><td>P-005</td><td>Gaseosa 1,5 L</td><td>Bebidas</td><td>$1,75</td><td>30</td></tr>
+                    <tr><td>P-006</td><td>Agua 600 ml</td><td>Bebidas</td><td>$0,50</td><td>60</td></tr>
+                    <tr><td>P-007</td><td>Leche entera 1 L</td><td>Bebidas</td><td>$1,10</td><td>20</td></tr>
+                    <tr><td>P-008</td><td>Jugo de naranja</td><td>Bebidas</td><td>$1,25</td><td>0</td></tr>
+                    <tr><td>P-009</td><td>Detergente 1 kg</td><td>Limpieza</td><td>$3,40</td><td>12</td></tr>
+                    <tr><td>P-010</td><td>Cloro 1 L</td><td>Limpieza</td><td>$1,30</td><td>18</td></tr>
+                    <tr><td>P-011</td><td>Papas fritas</td><td>Snacks</td><td>$0,60</td><td>50</td></tr>
+                    <tr><td>P-012</td><td>Galletas de chocolate</td><td>Snacks</td><td>$0,85</td><td>35</td></tr>
+                    <tr><td>P-013</td><td>Caramelos x10</td><td>Snacks</td><td>$0,40</td><td>80</td></tr>
+                    <tr><td>P-014</td><td>Jabón de baño</td><td>Aseo personal</td><td>$0,90</td><td>22</td></tr>
+                    <tr><td>P-015</td><td>Pasta dental</td><td>Aseo personal</td><td>$1,80</td><td>4</td></tr>
+                </tbody>
+                <tfoot><tr><th colspan="5">Precios y cantidades ilustrativos, no verificados en el establecimiento.</th></tr></tfoot>
+            </table>
+            <h3>Categorías disponibles (lista no ordenada y anidada)</h3>
+            <ul>
+                <li>Comida<ul><li>Pan, arroz y huevos</li><li>Enlatados</li></ul></li>
+                <li>Bebidas<ul><li>Agua y leche</li><li>Gaseosas y jugos</li></ul></li>
+                <li>Limpieza</li><li>Snacks</li><li>Aseo personal</li>
+            </ul>
+            <h3>Fotografías de productos</h3>
+            <img src="imagenes/alimentos.jpg" alt="Productos alimenticios de la tienda" width="320" height="210">
+            <img src="imagenes/bebidas.jpg" alt="Bebidas del catálogo" width="320" height="210">
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p><strong>Tienda 3 Hermanos</strong> | Proyecto académico de Fundamentos de Sistemas Web.</p>
+        <p><a href="index.html">Volver al inicio ↑</a></p>
+    </footer>
+</body>
+</html>
